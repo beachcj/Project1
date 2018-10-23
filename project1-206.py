@@ -16,7 +16,7 @@ def getData(file):
 	infile = open(file, 'r')
 	line = infile.readlines()
 	infile.close()
-
+	line.remove(line[0])
 	dictionary = []
 
 	for x in line:
@@ -128,6 +128,7 @@ def mySortPrint(a,col,fileName):
 	outfile = open(fileName, 'w')
 	for i in newlist:
 		outfile.write(i)
+
 
 def findAge(a):
 # def findAge(a):
